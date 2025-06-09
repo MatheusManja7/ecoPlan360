@@ -7,6 +7,10 @@
     --color-box-right: #83b37c;
 }
 
+body{
+    background-image: url(../imgs/fundo-img.jpg);
+}
+
 
 .main{
     width: 100%;
@@ -14,7 +18,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../imgs/fundo-img.jpg);
+    
+    /* Eferito de Vidro */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .container__box{
