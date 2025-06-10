@@ -12,7 +12,7 @@ class Projeto
 
     public function cadastrar($dados)
     {
-        $sql = "INSERT INTO projetos (nome, data_inicio, duracao, responsavel, descricao)
+        $sql = "INSERT INTO projeto (nome, data_inicio, duracao, responsavel, descricao)
                 VALUES (:nome, :data_inicio, :duracao, :responsavel, :descricao)";
         
         $stmt = $this->db->prepare($sql);
@@ -27,7 +27,7 @@ class Projeto
 
     public function listar()
     {
-        $sql = "SELECT * FROM projetos";
+        $sql = "SELECT * FROM projeto";
         $stmt = $this->db->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
