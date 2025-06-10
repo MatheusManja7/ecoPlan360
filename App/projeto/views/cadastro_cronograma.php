@@ -18,11 +18,11 @@
             </div>
 
             <div class="container__3">
-                <form method="POST" action="sua-rota-de-cadastro.php" class="form__cronograma">
+                <form id="formCadastro" class="form__cronograma">
                     
                     <div class="form-group">
-                        <label for="atividade">Projeto</label>
-                        <input class="input" type="text" id="atividade" name="atividade" placeholder="digite o nome projeto" required>
+                        <label for="projeto">Nome do Projeto</label>
+                        <input class="input" type="text" id="nome" name="nome" placeholder="digite o nome projeto" required>
                     </div>
             
                     <div class="form-group">
@@ -37,11 +37,11 @@
             
                     <div class="form-group">
                         <label for="responsavel">Responsável</label>
-                        <input class="input" type="text" id="responsavel" name="responsavel" placeholder="digite o nome do responsável">
+                        <input class="input" type="text" id="responsavel" name="responsavel" placeholder="digite o nome do responsável" require>
                     </div>
             
                     <div class="form-group">
-                        <label for="descricao">Descrição da Atividade</label>
+                        <label for="descricao">Descrição do Projeto</label>
                         <textarea class="textarea" id="descricao" name="descricao" placeholder="faça uma breve descrição do projeto" rows="4"></textarea>
                     </div>
                     
@@ -53,7 +53,8 @@
             </div>
             
         </div>
-
     </main>
+
+    <script src="../../../Public/js/js-cadastro-cronograma.js"></script>
 </body>
 </html>
